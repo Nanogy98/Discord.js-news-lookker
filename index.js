@@ -1,14 +1,3 @@
-client.once("ready", async () => {
-  const data = [
-    {
-      name: "news",
-      description: "ニュースを表示します",
-    }
-  ];
-  await client.application.commands.set(data);
-  console.log("set");
-});
-
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) {
     return;
